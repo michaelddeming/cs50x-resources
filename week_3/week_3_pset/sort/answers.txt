@@ -1,0 +1,12 @@
+sort1 uses: Bubble Sort
+
+How do you know?: In the "Best" case (already sorted) requires just a single pass over n, Big Omega(n). In the "Worst" case, you swap at every position of n through n-1 iterations, O(n^2)
+
+sort2 uses: Merge Sort
+
+How do you know?: For large datasets (50000) it was the fastest running algorithm out of the three w/ little difference in time as sample size drastically increases. 
+
+sort3 uses: Selection Sort
+
+How do you know?: For both the "Worst" and "Best" case scenario, the time is roughly the same, Big Theta(n^2).
+    - Wether sorting already sorted data, or reversed data (swap at every position of n), the same time is taken.
