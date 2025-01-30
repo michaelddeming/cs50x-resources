@@ -1,4 +1,4 @@
-# Week 2: Algorithms #
+# Week 3: Algorithms #
 
 - Algorithm: Step by step instructions for solving some specific type of problem.
 
