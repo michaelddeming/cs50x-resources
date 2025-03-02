@@ -1,0 +1,169 @@
+body {
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.mode-buttons{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#dark-mode {
+    margin-bottom: 10px;
+
+}
+#light-mode {
+    visibility: hidden;
+}
+
+
+nav.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+ul.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-text: center;
+    align-items: center;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+}
+
+li.nav-page-text {
+    padding: 10px;
+}
+
+li.nav-page-text:hover {
+    color: red;
+}
+
+a.nav-page-link, #youtube-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    border: 1px solid #000;
+    width: 80%;
+}
+
+
+div.introduction-div-section {
+    display: flex;
+    flex: row;
+    justify-content: center;
+
+
+}
+
+.introduction-text {
+    text-align: center;
+}
+
+div.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+div.project1, div.project2 {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+}
+
+
+
+.project-desc {
+    width: 100%;
+    max-width: 500px;
+}
+
+ul.project-desc {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+@media (max-width: 1200px) {
+
+
+    div.project1, div.project2 {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 30px;
+}
+}
+
+@media (max-width: 700px) {
+
+    div.project1, div.project2 {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .project-demo {
+        width: 100%
+    }
+
+
+}
+
+/* contact page */
+
+div.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* youtube page */
+
+.youtube-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.youtube-text, .youtube-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.youtube-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#youtube-link:hover {
+    color: red;
+}
+

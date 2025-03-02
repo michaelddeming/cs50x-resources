@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <div class="question" id="question1">
+                    <h3>What is 2 + 2?</h3>
+                    <p class="answer-response" id="q1-answer-response"></p>
+                    <div class="answers" id="question1-answers">
+                        <button class="incorrect" data-correct="false">3</button>
+                        <button class="correct" data-correct="true">4</button>
+                        <button class="incorrect" data-correct="false">5</button>
+                    </div>
+                 </div>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <div class="question" id="question2">
+                    <h3>What is 2 + 2?</h3>
+                    <p class="answer-response" id="q2-answer-response"></p>
+                    <div class="answers" id="question2-answers">
+                        <form>
+                            <input autocomplete="off" id="free-response-answer" name="free-response-answer" placeholder="Language" type="text">
+                            <button class="question2-submit" type="submit" id="free-response-submit">Submit</button>
+                        </form>
+                    </div>
+
+
+            </div>
+        </div>
+    </body>
+    <script>
+
+            document.querySelector("#question1-answers").addEventListener("click", function (event) {
+                if (event.target && event.target.matches("button.incorrect")){
+                    event.target.style.backgroundColor = "red";
+                    document.querySelector("#q1-answer-response").innerHTML = "Incorrect";
+
+                }
+                else if (event.target && event.target.matches("button.correct")){
+                    event.target.style.backgroundColor = "green";
+                    document.querySelector("#q1-answer-response").innerHTML = "Correct!";
+
+                }
+            });
+            document.querySelector("form").addEventListener("submit", function (event) {
+
+                let user_input = document.querySelector("#free-response-answer").value
+
+
+                if (user_input == "4" || user_input.toLowerCase().trim() === "four" )
+                {
+                    document.querySelector("input").style.backgroundColor = "green";
+                    document.querySelector("#q2-answer-response").innerHTML = "Correct!"
+                }
+
+
+                else
+                {
+                    document.querySelector("input").style.backgroundColor = "red";
+                    document.querySelector("#q2-answer-response").innerHTML = "Incorrect"
+                }
+                
+                event.preventDefault();
+                });
+
+
+
+    </script>
+</html>
