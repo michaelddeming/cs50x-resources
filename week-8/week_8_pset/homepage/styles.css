@@ -39,7 +39,7 @@ ul.nav-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-text: center;
+    text-align: center;
     align-items: center;
     font-weight: bold;
     list-style-type: none;
